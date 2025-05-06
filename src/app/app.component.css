@@ -346,72 +346,72 @@ body {
   }
 
   .menu {
-    flex-direction: column; /* Stack menu items vertically */
+    flex-direction: column;
     background-color: black;
     padding: 10px;
-    align-items: center; /* Center items horizontally */
+    align-items: center;
     justify-content: center;
   }
 
   .menu.block {
-    display: flex; /* Show menu when toggled */
+    display: flex;
   }
 
   .menu button {
-    width: 100%; /* Full-width buttons */
+    width: 100%;
     text-align: center;
     justify-content: center;
     padding: 10px;
-    font-size: 0.875rem; /* Smaller font size */
+    font-size: 0.875rem;
   }
   .menu ul li {
-    display: flex; /* Ensure flexbox is applied */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    gap: 4px; /* Add minimal spacing between text and arrow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
   }
 
   .menu ul li a {
-    margin-right: 4px; /* Add minimal spacing between text and arrow */
+    margin-right: 4px;
   }
 
   .menu ul li span {
-    margin-left: 0; /* Remove any additional margin on the arrow */
+    margin-left: 0;
   }
 
   .hero-section {
     margin-top: 10vh;
-    flex-direction: column; /* Stack sections vertically */
-    align-items: center; /* Center align items horizontally */
-    padding: 16px; /* Add padding for spacing */
-    height: auto; /* Allow height to adjust based on content */
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    height: auto;
     padding-bottom: 100px;
   }
 
   .hero-section-left,
   .hero-section-right {
-    width: 90%; /* Make both sections take full width */
+    width: 90%;
     max-width: 600px;
   }
 
   .hero-section-left {
-    margin-bottom: 16px; /* Add spacing below the image section */
+    margin-bottom: 16px;
     display: flex;
-    justify-content: center; /* Center the image horizontally */
+    justify-content: center;
   }
 
   .hero-section-right {
     text-align: left;
-    padding: 0; /* Remove left padding */
+    padding: 0;
   }
 
   .hero-section h1 {
-    font-size: 1.8rem; /* Adjust font size for heading */
+    font-size: 1.8rem;
     line-height: 1;
   }
 
   .hero-section p {
-    font-size: 0.8rem; /* Reduce font size for paragraph */
+    font-size: 0.8rem;
   }
 
   .hero-section button {
@@ -426,21 +426,20 @@ body {
   }
   .stats-section {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center-align items */
-    gap: 24px; /* Add more spacing between cards */
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
 
   .stats-section .stat {
-    flex: 1 1 100%; /* Full width for each card */
+    flex: 1 1 100%;
     width: 80%;
     text-align: left;
-    padding: 20px; /* Add more padding for better spacing */
-    border-radius: 16px; /* Rounded corners */
-    background-color: white; /* Card background */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1),
-      /* Bottom shadow */ 0 -4px 15px rgba(0, 0, 0, 0.05),
-      /* Top shadow */ 0 0 20px rgba(0, 162, 255, 0.2); /* Soft glow effect */
+    padding: 20px;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), 0 -4px 15px rgba(0, 0, 0, 0.05),
+      0 0 20px rgba(0, 162, 255, 0.2);
   }
 
   .stats-section .stat h2 {
@@ -452,30 +451,30 @@ body {
   }
 
   .platform-section {
-    flex-direction: column; /* Stack items vertically */
-    gap: 24px; /* Add spacing between text and image */
-    margin-top: 0; /* Remove top margin for smaller screens */
-    padding-top: 0; /* Remove padding for smaller screens */
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .how-it-works-section {
-    margin-top: 0; /* Remove top margin for smaller screens */
-    padding-top: 0; /* Remove padding for smaller screens */
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .platform-section .text-content,
   .how-it-works-section .text-content {
-    text-align: left !important; /* Force left alignment */
+    text-align: left !important;
   }
 
   .platform-section h2,
   .how-it-works-section h2 {
-    text-align: left; /* Ensure headings are left-aligned */
+    text-align: left;
   }
 
   .platform-section p,
   .how-it-works-section p {
-    text-align: left; /* Ensure paragraphs are left-aligned */
+    text-align: left;
   }
 
   .platform-section .buttons {
@@ -483,27 +482,27 @@ body {
   }
 
   .platform-section .image-content {
-    order: 2; /* Move the image below the buttons */
-    margin-top: 16px; /* Add spacing above the image */
+    order: 2;
+    margin-top: 16px;
   }
 
   .platform-section .image-content img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
   }
 
   .how-it-works-section .text-content {
-    text-align: left; /* Align text to the left */
+    text-align: left;
   }
 
   .how-it-works-section .image-content {
-    order: 2; /* Move the image below the text */
-    margin-top: 16px; /* Add spacing above the image */
+    order: 2;
+    margin-top: 16px;
   }
 
   .how-it-works-section .image-content img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
   }
 
   .w-full.flex.absolute {
@@ -549,29 +548,29 @@ body {
   }
 
   .trusted-section .logo-card {
-    width: 80%; /* Make logos take 80% of the width */
+    width: 80%;
   }
 
   /* Center the text */
   h3 {
-    font-size: 1.5rem; /* Adjust font size */
-    text-align: center; /* Center-align text */
-    margin-bottom: 16px; /* Add spacing below the heading */
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 16px;
   }
 
   /* Adjust grid layout for logos */
   .grids {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
-    gap: 12px; /* Reduce spacing between items */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
   .logo-cards {
-    height: 70px; /* Adjust height for smaller screens */
-    padding: 8px; /* Reduce padding */
+    height: 70px;
+    padding: 8px;
   }
 
   .logo-imgs {
-    max-height: 40px; /* Adjust logo size */
+    max-height: 40px;
     max-width: 100%;
   }
 }
@@ -604,69 +603,69 @@ body {
   }
 
   .stats-section .stat {
-    flex: 1 1 calc(50% - 16px); /* 2 cards per row */
+    flex: 1 1 calc(50% - 16px);
     max-width: calc(50% - 16px);
   }
 
   .platform-section {
-    flex-direction: column; /* Stack items vertically */
-    gap: 24px; /* Add more spacing between text and image */
+    flex-direction: column;
+    gap: 24px;
   }
 
   .platform-section .text-content,
   .platform-section .image-content {
-    width: 100%; /* Full width for both sections */
-    padding: 0; /* Remove padding */
+    width: 100%;
+    padding: 0;
   }
 
   .platform-section .text-content h2 {
-    font-size: 1.8rem; /* Adjust font size for smaller screens */
-    text-align: left; /* Center-align the heading */
+    font-size: 1.8rem;
+    text-align: left;
   }
 
   .platform-section .text-content p {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-    text-align: left; /* Center-align the paragraph */
+    font-size: 1rem;
+    text-align: left;
   }
 
   .platform-section .buttons {
     display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap */
-    justify-content: center; /* Center-align buttons */
-    gap: 12px; /* Add spacing between buttons */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
   }
 
   .platform-section .buttons button {
-    flex: 1 1 calc(50% - 12px); /* Make buttons take 50% width with spacing */
-    max-width: 150px; /* Limit button width */
-    padding: 10px; /* Add padding for better spacing */
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
-    text-align: center; /* Center-align button text */
-    border-radius: 8px; /* Rounded corners */
+    flex: 1 1 calc(50% - 12px);
+    max-width: 150px;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 8px;
   }
 
   .w-full.flex.absolute {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center-align items */
-    top: 0; /* Adjust top position */
+    flex-direction: column;
+    align-items: center;
+    top: 0;
   }
 
   .w-full.flex.absolute .max-w-6xl {
-    padding: 16px; /* Adjust padding for smaller screens */
-    text-align: center; /* Center-align text */
+    padding: 16px;
+    text-align: center;
   }
 
   .w-full.flex.absolute .max-w-6xl .flex {
-    flex-direction: column; /* Stack text and button vertically */
-    gap: 16px; /* Add spacing between text and button */
+    flex-direction: column;
+    gap: 16px;
   }
 
   .w-full.flex.absolute .max-w-6xl button {
-    width: 100%; /* Make the button full width */
+    width: 100%;
   }
 
   .grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -688,7 +687,7 @@ body {
   }
 
   .stats-section .stat {
-    flex: 1 1 calc(50% - 16px); /* 2 cards per row */
+    flex: 1 1 calc(50% - 16px);
     max-width: calc(50% - 16px);
   }
 }
@@ -705,7 +704,7 @@ body {
   }
 
   .navbar ul {
-    gap: 20px; /* Add spacing between navigation items */
+    gap: 20px;
   }
 
   .hero-section {
@@ -811,16 +810,6 @@ body {
 
 .footer .max-w-7xl {
   width: 100%;
-}
-
-/* Adjustments for form elements */
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
 }
 
 button {

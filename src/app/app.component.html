@@ -32,119 +32,22 @@
       class="menu absolute top-full left-0 w-full bg-black text-white md:hidden"
     >
       <div class="menu-container h-screen overflow-y-auto bg-black text-white">
-        <ul class="flex flex-col gap-4 p-4">
-          <li class="flex flex-col items-center">
-            <div
-              class="flex items-center justify-center w-full cursor-pointer"
-              (click)="isProductsOpen = !isProductsOpen"
-            >
-              <a class="block font-normal flex items-center text-center">
-                Products<span style="margin-left: 7px">&#9662;</span>
-              </a>
-            </div>
-            <!-- Dropdown Menu -->
-            <ul
-              class="w-full text-white mt-2 transition-all duration-300"
-              [ngClass]="{ hidden: !isProductsOpen, block: isProductsOpen }"
-            >
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Content Management</a>
-              </li>
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Corporate TV and IPTV</a>
-              </li>
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Templates and Widgets</a>
-              </li>
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Media Player</a>
-              </li>
-            </ul>
-          </li>
-
-          <!-- Industries Dropdown -->
-          <li class="flex flex-col items-center">
-            <div
-              class="flex items-center justify-center w-full cursor-pointer"
-              (click)="isIndustriesOpen = !isIndustriesOpen"
-            >
-              <a class="block font-normal flex items-center text-center">
-                Industries<span style="margin-left: 7px">&#9662;</span>
-              </a>
-            </div>
-            <!-- Dropdown Menu -->
-            <ul
-              class="w-full text-white mt-2 transition-all duration-300"
-              [ngClass]="{ hidden: !isIndustriesOpen, block: isIndustriesOpen }"
-            >
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Retail</a>
-              </li>
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Banks & Banking Sector</a>
-              </li>
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Educational Institutions</a>
-              </li>
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Gas Stations</a>
-              </li>
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Sports Facilities & Fitness</a>
-              </li>
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Offices & Business Centres</a>
-              </li>
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Healthcare Facilities</a>
-              </li>
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Transport & Transport Hubs</a>
-              </li>
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Hotels & Resorts</a>
-              </li>
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Shopping Malls</a>
-              </li>
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Cafés, Bars & Restaurants</a>
-              </li>
-              <li class="px-4 py-2 hover:bg-gray-700">
-                <a class="block">Museums & Cultural Centres</a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="flex items-center justify-between">
-            <a class="block">Solutions</a>
-            <span>&#9662;</span>
-          </li>
-          <li class="flex items-center justify-between">
-            <a class="block">Knowledge Base</a>
-          </li>
-          <li class="flex items-center justify-between">
-            <a class="block">Information</a>
-            <span>&#9662;</span>
-          </li>
-        </ul>
-
         <div class="flex flex-col gap-4 mt-4">
-          <button
+          <!-- <button
             class="bg-white text-[#0098FF] px-5 py-2 rounded-lg font-medium"
           >
             Partner Program
-          </button>
+          </button> -->
           <button
             class="bg-black bg-[#0098FF] text-white px-5 py-2 rounded-lg font-medium"
           >
             Log In
           </button>
         </div>
-        <div class="flex justify-center gap-4 mt-4 px-4">
+        <!-- <div class="flex justify-center gap-4 mt-4 px-4">
           <span>RU</span>
           <span>ES</span>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -255,9 +158,8 @@
     <!-- Text content -->
     <div class="text-content w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
       <h2 class="text-4xl font-bold mb-2 md:text-left">
-        Smart
         <br />
-        <span class="text-[#0098FF]"> Digital Display </span> Networks
+        <span class="text-[#0098FF]"> Exivision </span>
       </h2>
       <p class="my-6 text-lg md:text-left">
         Transform your digital screens into a
@@ -271,13 +173,13 @@
         <button
           (click)="setActiveIndustry('retail')"
           [class]="
-            activeIndustry === 'retail'
+            activeIndustry === 'smart Digital Display Networks'
               ? 'bg-[#0098FF] text-white'
               : 'bg-white border border-gray-300 text-gray-800'
           "
           class="px-6 py-3 rounded-lg font-medium"
         >
-          Retail
+          Smart Digital Display Networks
         </button>
         <button
           (click)="setActiveIndustry('banks')"
@@ -288,9 +190,9 @@
           "
           class="px-6 py-3 rounded-lg font-medium"
         >
-          Banks
+          Programmatic DOOH Advertising
         </button>
-        <button
+        <!-- <button
           (click)="setActiveIndustry('education')"
           [class]="
             activeIndustry === 'education'
@@ -300,7 +202,7 @@
           class="px-6 py-3 rounded-lg font-medium"
         >
           Education
-        </button>
+        </button> -->
         <button
           (click)="setActiveIndustry('horeca')"
           [class]="
@@ -310,7 +212,7 @@
           "
           class="px-6 py-3 rounded-lg font-medium"
         >
-          HoReCa
+          Audience & Data Analytics
         </button>
         <button
           (click)="setActiveIndustry('gas')"
@@ -321,7 +223,7 @@
           "
           class="px-6 py-3 rounded-lg font-medium"
         >
-          Gas Stations
+          Dynamic Content Management
         </button>
         <button
           (click)="setActiveIndustry('healthcare')"
@@ -332,9 +234,9 @@
           "
           class="px-6 py-3 rounded-lg font-medium"
         >
-          Healthcare
+          Mobile & Web Integration
         </button>
-        <button
+        <!-- <button
           (click)="setActiveIndustry('offices')"
           [class]="
             activeIndustry === 'offices'
@@ -355,7 +257,7 @@
           class="px-6 py-3 rounded-lg font-medium"
         >
           Sports & Fitness
-        </button>
+        </button> -->
       </div>
     </div>
 
@@ -412,7 +314,7 @@
             />
           </svg>
         </div>
-        <p>Connect from any browser</p>
+        <p>Real-time bidding for ad slots</p>
       </li>
       <li class="flex items-start">
         <div
@@ -434,7 +336,7 @@
             />
           </svg>
         </div>
-        <p>Upload and edit content easily in an intuitive editor</p>
+        <p>Automated ad scheduling and placement</p>
       </li>
       <li class="flex items-start">
         <div
@@ -456,7 +358,7 @@
             />
           </svg>
         </div>
-        <p>Schedule and publish your content</p>
+        <p>Integration with DSPs and SSPs</p>
       </li>
     </ul>
   </div>
@@ -1033,7 +935,7 @@
     <div class="relative">
       <div class="flex items-center justify-center">
         <div
-          class="absolute top-[-150px] rounded-xl py-12 px-8 bg-gradient-to-r from-[#5D39D6] via-[#27216A] to-[#120824]"
+          class="absolute top-[-150px] w-[calc(95%)] rounded-xl py-12 px-8 bg-gradient-to-r from-[#5D39D6] via-[#27216A] to-[#120824]"
         >
           <div
             class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center"
@@ -1050,43 +952,49 @@
             </div>
 
             <!-- Right side - form -->
-            <div class="w-full md:w-1/2">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                <input type="text" placeholder="Name" class="form-input" />
-                <input type="text" placeholder="Company" class="form-input" />
+            <div class="flex flex-col w-full max-w-lg gap-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="rounded-md p-3 text-gray-900 text-base font-normal"
+                />
+                <input
+                  type="text"
+                  placeholder="Company"
+                  class="rounded-md p-3 text-gray-900 text-base font-normal"
+                />
               </div>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                <input type="email" placeholder="Email" class="form-input" />
-                <div
-                  class="flex rounded-lg overflow-hidden border border-gray-300 h-11"
-                >
-                  <div
-                    class="bg-white flex items-center px-3 border-r border-gray-300"
-                  >
-                    <img
-                      src="assets/us-flag.png"
-                      alt="US"
-                      class="h-5 mr-1"
-                      onerror="this.src='https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg'; this.onerror='';"
-                    />
-                    <span class="text-gray-600 text-sm">+1</span>
-                  </div>
-                  <input
-                    type="tel"
-                    placeholder="(999) 999-9999"
-                    class="flex-1 border-none px-3"
-                  />
-                </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Email Input -->
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="rounded-md p-3 text-gray-900 text-base font-normal border border-gray-300"
+                />
+
+                <!-- Phone Input -->
+                <input
+                  type="tel"
+                  placeholder="Phone"
+                  class="rounded-md p-3 text-gray-900 text-base font-normal border border-gray-300"
+                />
               </div>
               <button
-                class="bg-[#0098FF] text-white py-3 rounded-lg w-full text-lg font-medium mb-4"
+                type="submit"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-md py-3 mt-1 w-[400px] px-6"
               >
                 Request a Demo
               </button>
-              <p class="text-white text-xs opacity-70 text-center">
+              <p class="text-xs text-gray-300 mt-2 max-w-xs text-center">
                 By submitting this form you confirm that you agree to the
-                <a class="text-[#0098FF]">Privacy Policy</a> and
-                <a class="text-[#0098FF]">Terms of Use</a>
+                <a href="#" class="text-blue-400 hover:underline"
+                  >Privacy Policy</a
+                >
+                and
+                <a href="#" class="text-blue-400 hover:underline"
+                  >Terms of Use</a
+                >.
               </p>
             </div>
           </div>
@@ -1095,16 +1003,15 @@
 
       <!-- Footer Section -->
       <div class="w-full bg-[#1a1a1a] text-white pt-80 sm:pt-0 py-16 px-8">
-        <div class="h-[24vh]"></div>
+        <div class="h-[30vh]"></div>
 
         <div class="w-full bg-[#1a1a1a] text-white py-16 px-8">
           <div class="max-w-7xl mx-auto">
             <!-- Footer Content -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <!-- Logo and Contact -->
-              <div class="col-span-2 md:col-span-1 grid grid-cols-2 gap-4">
+            <div class="flex justify-center items-center">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Logo and Phone Number -->
-                <div class="flex flex-col items-center md:items-start">
+                <div class="flex flex-col items-center md:items-start mb-8">
                   <div class="h-12 flex items-center">
                     <span class="text-white text-4xl">Exivision</span>
                   </div>
@@ -1112,119 +1019,21 @@
                 </div>
 
                 <!-- Address -->
-                <div class="text-gray-400 text-sm col-span-4">
+                <div class="text-gray-400 text-sm mb-12">
                   <p class="mb-6">
                     Republic of Kazakhstan, Almaty city, postal code 050012,
                     Amalinsky district, Zhamblya street, 114/85 block B,
                     Baitursynov street, 85 block B, office 5
                   </p>
                 </div>
+
+                <!-- Copyright -->
+                <div class="text-center md:text-left text-gray-500 text-sm">
+                  <p class="mt-8">
+                    © 2017-2025 Exivision. All Rights Reserved.
+                  </p>
+                </div>
               </div>
-
-              <!-- PRODUCTS and RESOURCES -->
-              <!-- <div>
-                <h3 class="text-lg font-medium mb-6 text-[#0098FF]">
-                  PRODUCTS
-                </h3>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                  <li><a class="hover:text-white">Content Management</a></li>
-                  <li><a class="hover:text-white">Corporate TV and IPTV</a></li>
-                  <li><a class="hover:text-white">Templates and Widgets</a></li>
-                  <li><a class="hover:text-white">Media Player</a></li>
-                  <li><a class="hover:text-white">Enterprise solutions</a></li>
-                  <li><a class="hover:text-white">Partner Program</a></li>
-                </ul>
-
-                <h3 class="text-lg font-medium mt-10 mb-6 text-[#0098FF]">
-                  RESOURCES
-                </h3>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                  <li><a class="hover:text-white">Projects</a></li>
-                  <li><a class="hover:text-white">Knowledge Base</a></li>
-                  <li><a class="hover:text-white">FAQ</a></li>
-                  <li><a class="hover:text-white">News</a></li>
-                  <li><a class="hover:text-white">Blog</a></li>
-                  <li><a class="hover:text-white">Contact Information</a></li>
-                </ul>
-              </div> -->
-
-              <!-- SOLUTIONS and LEGAL DOCUMENTS -->
-              <!-- <div>
-                <h3 class="text-lg font-medium mb-6 text-[#0098FF]">
-                  SOLUTIONS
-                </h3>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                  <li><a class="hover:text-white">TV Screens</a></li>
-                  <li><a class="hover:text-white">LED Screens</a></li>
-                  <li><a class="hover:text-white">Video Walls</a></li>
-                  <li><a class="hover:text-white">Interactive Kiosks</a></li>
-                  <li><a class="hover:text-white">Menu Boards</a></li>
-                  <li><a class="hover:text-white">Navigations</a></li>
-                  <li><a class="hover:text-white">Audio</a></li>
-                </ul>
-
-                <h3 class="text-lg font-medium mt-10 mb-6 text-[#0098FF]">
-                  LEGAL DOCUMENTS
-                </h3>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                  <li><a class="hover:text-white">Terms of Use</a></li>
-                  <li><a class="hover:text-white">Privacy Policy</a></li>
-                  <li><a class="hover:text-white">Cookie Policy</a></li>
-                  <li>
-                    <a class="hover:text-white"
-                      >Personal Data Processing Agreement</a
-                    >
-                  </li>
-                  <li>
-                    <a class="hover:text-white"
-                      >Trademark and Brand Usage Policy</a
-                    >
-                  </li>
-                </ul>
-              </div> -->
-
-              <!-- INDUSTRIES -->
-              <!-- <div class="mt-10 sm:mt-0 sm:ml-4">
-                <h3 class="text-lg font-medium mb-6 text-[#0098FF]">
-                  INDUSTRIES
-                </h3>
-                <ul class="space-y-3 text-gray-400 text-sm">
-                  <li><a class="hover:text-white">Retail</a></li>
-                  <li>
-                    <a class="hover:text-white">Banks & Banking Sector</a>
-                  </li>
-                  <li>
-                    <a class="hover:text-white">Educational Institutions</a>
-                  </li>
-                  <li><a class="hover:text-white">Gas Stations</a></li>
-                  <li>
-                    <a class="hover:text-white">Offices & Business Centres</a>
-                  </li>
-                  <li>
-                    <a class="hover:text-white">Sports Facilities & Fitness</a>
-                  </li>
-                  <li><a class="hover:text-white">Healthcare Facilities</a></li>
-                  <li>
-                    <a class="hover:text-white">Transport & Transport Hubs</a>
-                  </li>
-                  <li><a class="hover:text-white">Hotels & Resorts</a></li>
-                  <li><a class="hover:text-white">Shopping Malls</a></li>
-                  <li>
-                    <a class="hover:text-white">Cafés, Bars & Restaurants</a>
-                  </li>
-                  <li>
-                    <a class="hover:text-white">Museums & Cultural Centres</a>
-                  </li>
-                </ul>
-              </div> -->
-            </div>
-
-            <div class="py-2"></div>
-            <!-- Copyright -->
-            <div
-              class="text-center text-gray-500 pt-4 border-t border-gray-800 text-sm"
-            >
-              © 2017-2025 SmartPlayer. All Rights Reserved.
             </div>
           </div>
         </div>
