@@ -19,8 +19,7 @@ export class AppComponent implements OnInit {
   slides = [
     {
       lid: 'tild6165-6636-4762-b630-633864396361',
-      li_img:
-        'https://static.tildacdn.com/tild6165-6636-4762-b630-633864396361/chanel.jpg',
+      li_img: '../assets/application-06.jpg',
       li_imgalt: '',
       li_imgtitle: '',
       li_imgurl: '',
@@ -31,8 +30,7 @@ export class AppComponent implements OnInit {
     },
     {
       lid: 'tild3131-3262-4130-b235-616230316331',
-      li_img:
-        'https://static.tildacdn.com/tild3131-3262-4130-b235-616230316331/ascona.jpg',
+      li_img: '../assets/application-03.jpg',
       li_imgalt: '',
       li_imgtitle: '',
       li_imgurl: '',
@@ -43,8 +41,18 @@ export class AppComponent implements OnInit {
     },
     {
       lid: 'tild3162-3766-4735-b633-636133376462',
-      li_img:
-        'https://static.tildacdn.com/tild3162-3766-4735-b633-636133376462/retail.jpg',
+      li_img: '../assets/application-04.jpg',
+      li_imgalt: '',
+      li_imgtitle: '',
+      li_imgurl: '',
+      li_imgtarget: '',
+      li_imgnofollow: '',
+      li_youtube: '',
+      li_vimeo: '',
+    },
+    {
+      lid: 'tild3162-3766-4735-b633-636133376462',
+      li_img: '../assets/application.png',
       li_imgalt: '',
       li_imgtitle: '',
       li_imgurl: '',
@@ -60,22 +68,16 @@ export class AppComponent implements OnInit {
 
   projects = [
     {
-      name: 'Ekonika',
-      image: 'assets/slideshow_1.jpg',
-      Location: 'Russia and Kazakhstan.',
-      objective:
-        'Remote management of LED screens across Russia with a unified system.',
-      solution:
-        'Since 2019, more than 50 Samsung, LG, and Philips panels have been connected to SmartPlayer at Ekonika retail stores across Russia and Kazakhstan..',
+      name: 'Advon  ',
+      image: '../assets/Advon.jpg',
+      Location:
+        'With Exivision, we are able to send real time updates of our company pricing, marketing collateral and schemes to the Distributors on a real time basis.',
     },
     {
-      name: 'Lime',
-      image: 'assets/slideshow_2.jpg',
-      Location: '',
-      objective:
-        'Remote management of LED screens across Russia with a unified system.',
-      solution:
-        'Since 2020, over 100 LED screens in Lime retail locations across Russia are managed through the SmartPlayer platform.',
+      name: 'Kumar Rasoi',
+      image: '../assets/Kumar.jpg',
+      Location:
+        'With the help of Exivision, we are now able to showcase deal of the day, Cheff Recommendation and Discounting on different items at different outlets with one single click.',
     },
   ];
 
