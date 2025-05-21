@@ -3,7 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Apply Montserrat to the whole project */
+/* Montserrat local font-face declarations */
+
+/* Apply Montserrat font globally */
 body {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }

@@ -62,7 +62,7 @@
         >
         <a
           href="#"
-          class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+          class="btn-hover bg-[#38a169] text-white px-4 py-2 rounded hover:bg-green-600"
           >Try For Free</a
         >
       </div>
@@ -102,23 +102,1276 @@
     >
   </div>
 </div>
-
+<a href="#" class="fixed-button"
+  >Talk To Sales <span class="ml-2">&rarr;</span></a
+>
 <div class="py-2"></div>
-<section
-  class="max-w-7xl mx-auto px-8 py-12 flex flex-col-reverse md:flex-row items-center gap-10"
+<div
+  class="max-w-7xl mx-auto px-8 py-12 flex flex-col-reverse md:flex-row items-center gap-10 mt-16"
 >
   <!-- Left Content -->
   <div class="w-full md:w-1/2 text-center md:text-left">
-    <h1 class="text-4xl md:text-5xl leading-tight">
+    <h1 class="text-4xl md:text-5xl font-bold">
       <span class="text-green-500">Elevate Your<br />Business</span>
-      <span class="text-gray-800"> With<br />Digital Signage Software</span>
+      <span class="text-gray-800">
+        With<br />Digital Signage <br />Software</span
+      >
     </h1>
     <p class="text-gray-600 mt-6 text-lg">
       Digital signage made easy. Transform any screen or TV into a dynamic
       platform to delight customers and engage employees.
     </p>
+
+    <!-- Buttons -->
+    <div class="hidden md:flex space-x-4 items-center mt-8">
+      <button class="btn-hover-effect">Try For Free</button>
+      <a
+        href="#"
+        class="bg-gray-800 text-white text-lg px-6 py-3 rounded hover:bg-gray-700 transition"
+      >
+        Let's Chat
+      </a>
+    </div>
+
+    <div style="margin-top: 10px; text-align: left; max-width: 400px">
+      <p class="text-gray-600 mt-6 text-lg">
+        14-day <span style="color: #00b894">FREE</span> trial No credit card
+        required
+      </p>
+
+      <div
+        class="review-section py-2"
+        style="
+          display: flex;
+          justify-content: flex-start;
+          gap: 40px;
+          align-items: center;
+        "
+      >
+        <div style="display: flex; align-items: center">
+          <img src="../../assets/icon 4.8.png" alt="Capterra Logo" width="30" />
+          <div style="margin-left: 10px">
+            <span style="color: #f1c40f">★★★★★</span> 4.8<br />
+            <small>4,000+ Capterra Reviews</small>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center">
+          <img src="../../assets/2.png" alt="G2 Logo" width="30" />
+          <div style="margin-left: 10px">
+            <span style="color: #f1c40f">★★★★★</span> 4.7<br />
+            <small>2,300+ G2 Reviews</small>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Right Image -->
-  <div class="w-full md:w-1/2"></div>
+  <div class="hero-section-right md:w-1/2 flex items-center justify-center">
+    <div
+      class="border border-black bg-black relative flex items-center justify-center"
+      style="border-width: 10px"
+    >
+      <!-- Gap ke liye padding ya margin use karein -->
+      <img
+        src="../../assets/3rd.png"
+        alt="FAQ Example"
+        class="object-contain w-[100%] h-[80%] bg-white"
+        style="width: calc(100% - 10px); height: calc(80% - 10px)"
+      />
+    </div>
+  </div>
+</div>
+
+<!-- Trusted Companies Section -->
+<div
+  class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center gap-10 mt-16"
+>
+  <!-- Text -->
+  <div class="w-full md:w-1/2 text-center md:text-left">
+    <p class="text-2xl sm:text-3xl font-medium text-gray-500">
+      Used by The World's Most Recognizable <br />
+      Companies
+    </p>
+  </div>
+
+  <!-- Logos with Blur Effect -->
+  <div class="w-full md:w-1/2 flex items-center justify-center">
+    <div class="flex flex-wrap justify-center gap-6">
+      <img
+        src="../../assets/leve.png"
+        alt="Levi's"
+        class="h-10 sm:h-9 object-contain filter grayscale opacity-80"
+      />
+      <img
+        src="../../assets/yam.png"
+        alt="Yamaha"
+        class="h-10 sm:h-10 object-contain filter grayscale opacity-80"
+      />
+      <img
+        src="../../assets/RB.png"
+        alt="Red Bull"
+        class="h-10 sm:h-10 object-contain filter grayscale opacity-80"
+      />
+      <img
+        src="../../assets/in.png"
+        alt="Instacart"
+        class="h-10 sm:h-12 object-contain filter grayscale opacity-80"
+      />
+      <img
+        src="../../assets/goodwill2 logo.webp"
+        alt="Goodwill"
+        class="h-10 sm:h-10 object-contain filter grayscale opacity-60"
+      />
+    </div>
+  </div>
+</div>
+
+<hr class="my-4 border-t border-gray-300" />
+
+<div class="sale-section">
+  <div class="play-icon" (click)="openLg(content)">
+    <i class="fas fa-play-circle"></i>
+    <ng-template #content let-modal>
+      <div id="videoModal" class="modal">
+        <div class="modal-content">
+          <span class="close" (click)="closeModal()">&times;</span>
+          <iframe
+            src="https://player.vimeo.com/video/838664073?h=bb01fca44e"
+          ></iframe>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+  <div class="bottom-text">
+    <span>As seen on</span>
+    <img
+      src="../../assets/6527f8499e75672b5147c6e4_capera_gq.png"
+      alt="Capterra"
+    />
+  </div>
+</div>
+
+<!-- Headline Section -->
+<section class="text-center px-4 sm:px-6 lg:px-8 mt-20">
+  <h2
+    class="text-3xl sm:text-4xl md:text-6xl lg:text-5xl font-semibold text-gray-900 leading-snug max-w-6xl mx-auto"
+  >
+    Unlock Your Potential<br />
+    With Our Digital Signage Software
+  </h2>
+  <p class="mt-4 text-base sm:text-lg text-gray-600 max-w-4xl mx-auto">
+    Turn any screen or TV into captivating digital signage with our powerful,
+    easy-to-use digital signage platform.
+  </p>
 </section>
+
+<section
+  class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-16 bg-white gap-10 relative"
+>
+  <!-- Left Image + Icons -->
+  <div class="relative w-fit mx-auto z-10">
+    <div
+      class="absolute -inset-6 bg-cyan-100 opacity-50 blur-2xl rounded-3xl z-0"
+    ></div>
+
+    <!-- Subtle white overlay to mimic frosted glass glow -->
+    <div class="absolute -inset-2 bg-white/40 blur-xl rounded-2xl z-0"></div>
+
+    <!-- Main Image -->
+    <img
+      src="../../assets/home_screen_compatibilty-updated.webp"
+      alt="Any Screen Any Hardware"
+      class="max-w-full h-auto relative z-10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)]"
+    />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 text-center lg:text-left max-w-xl">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      Any Screen, Any Hardware
+    </h2>
+    <p class="text-gray-600 text-base md:text-lg mb-6">
+      We offer the largest variety of platform and hardware options, including
+      our popular OptiSigns devices. Enjoy the freedom to choose the best
+      hardware for your needs with our flexible digital signage software
+      solution.
+    </p>
+
+    <!-- Links and Button -->
+
+    <div class="flex flex-col md:flex-row md:items-center gap-4">
+      <div class="flex items-center space-x-4 text-green-600 font-medium">
+        <a
+          href="#"
+          class="group flex items-center no-underline text-green-600 hover:text-black transition"
+        >
+          <span class="transition group-hover:text-black"
+            >Recommended Hardware</span
+          >
+          <span class="ml-3 transition group-hover:text-black">&gt;</span>
+        </a>
+
+        <span
+          class="hidden md:inline-block border-l border-gray-300 h-4"
+        ></span>
+
+        <a
+          href="#"
+          class="group flex items-center gap-1 no-underline text-green-600 hover:text-black transition"
+        >
+          <span class="transition group-hover:text-black"
+            >All Supported Platforms</span
+          >
+          <span class="ml-3 group-hover:text-black">&gt;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div
+  class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-16 bg-white gap-10 relative"
+>
+  <!-- Left Content (Text) -->
+  <div class="max-w-xl z-10">
+    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+      Easy Content Management
+    </h2>
+    <p class="text-gray-600 text-base md:text-lg mb-6">
+      You'll love our user-friendly CMS, allowing you to easily edit and publish
+      engaging content with features such as a drag-and-drop interface, stock
+      images,
+      <a href="#" class="underline">templates</a>, and
+      <a href="#" class="underline">compatibility with tons of file types</a>.
+    </p>
+    <a
+      href="#"
+      class="group flex items-center no-underline text-green-600 hover:text-black transition"
+    >
+      <span class="transition group-hover:text-black">See All Templates</span>
+      <span class="ml-3 transition group-hover:text-black">&gt;</span>
+    </a>
+  </div>
+
+  <!-- Right Content (Image + Glow + Icons) -->
+  <div class="relative w-full max-w-3xl mx-auto z-10">
+    <!-- Glow behind image -->
+    <div
+      class="absolute inset-0 bg-cyan-100 opacity-50 blur-2xl rounded-3xl z-0"
+    ></div>
+
+    <!-- Subtle white overlay to mimic frosted glass glow -->
+    <div class="absolute inset-4 bg-white/40 blur-xl rounded-2xl z-0"></div>
+
+    <!-- Main Image -->
+    <img
+      src="../../assets/menu home_content_management.webp"
+      alt="CMS Editor"
+      class="relative z-10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] w-full h-auto"
+    />
+  </div>
+</div>
+
+<section
+  class="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-16 bg-white gap-10 relative"
+>
+  <!-- Left Image + Icons -->
+  <div class="relative w-fit mx-auto z-10">
+    <!-- Glow behind image -->
+    <div
+      class="absolute inset-0 bg-cyan-100 opacity-50 blur-2xl rounded-3xl z-0"
+    ></div>
+
+    <!-- Subtle white overlay to mimic frosted glass glow -->
+    <div class="absolute inset-4 bg-white/40 blur-xl rounded-2xl z-0"></div>
+
+    <!-- Main Image -->
+    <img
+      src="../../assets/_home_product-3.webp"
+      alt="CMS Editor"
+      class="relative z-10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] w-full h-auto"
+    />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 text-center lg:text-left max-w-xl">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      Connect With All Your Apps
+    </h2>
+    <p class="text-gray-600 text-base md:text-lg mb-6">
+      Add dynamic content to your screens with 140+ apps including weather,
+      Instagram, Power BI, YouTube, Google Slides, and more. Showcase multiple
+      items with our easy-to-use Split Screen app.
+    </p>
+
+    <!-- Links and Button -->
+
+    <div class="flex flex-col md:flex-row md:items-center gap-4">
+      <div class="flex items-center space-x-4 text-green-600 font-medium">
+        <a
+          href="#"
+          class="group flex items-center no-underline text-green-600 hover:text-black transition"
+        >
+          <span class="transition group-hover:text-black"
+            >View All Apps & Integrations</span
+          >
+          <span class="ml-3 transition group-hover:text-black">&gt;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Try For Free -->
+<div class="flex justify-center mt-8">
+  <button class="btn-hover-effect">
+    Try For Free
+    <span class="ml-2">&rarr;</span>
+  </button>
+</div>
+
+<!-- Data Security -->
+<div
+  class="flex flex-col md:flex-row justify-between items-stretch bg-gray-900 text-white p-8 mt-14"
+>
+  <div class="flex-1 p-4 flex flex-col">
+    <img
+      src="../../assets/built for.webp"
+      alt="Description 1"
+      class="w-full h-auto rounded-lg shadow-lg"
+    />
+    <h3 class="text-4xl font-medium mt-4">Built for Teams</h3>
+    <p class="mt-4 md:text-lg mb-6">
+      We make sure to prioritize our customers' content workflows and management
+      needs by providing
+      <a href="#" class="underline"> customizable permissions</a>,
+      <a href="#" class="underline"> roles</a>,
+      <a href="#" class="underline">and publishing access and options</a> that
+      make it easy for you to manage your screens.
+    </p>
+  </div>
+  <div class="flex-1 p-4 flex flex-col">
+    <img
+      src="../../assets/data.webp"
+      alt="Description 2"
+      class="w-full h-auto rounded-lg shadow-lg"
+    />
+    <h3 class="text-4xl font-medium mt-4">Data Security</h3>
+    <p class="mt-4 md:text-lg mb-6">
+      We are committed to ensuring the safety and protection of our customers'
+      data through
+      <a href="#" class="underline">industry-leading encryption</a>,
+      <a href="#" class="underline"> single sign-on</a>,
+      <a href="#" class="underline"> compliance with GDPR regulations</a>,
+      <a href="#" class="underline">
+        and our AICPA SOC 2 Type II certification</a
+      >.
+    </p>
+  </div>
+  <div class="flex-1 p-4 flex flex-col">
+    <img
+      src="../../assets/to help.webp"
+      alt="Description 3"
+      class="w-full h-auto rounded-lg shadow-lg"
+    />
+    <h3 class="text-4xl font-medium mt-4">Always Here to Help</h3>
+    <p class="mt-4 md:text-lg mb-6">
+      Our US-based customer support team is available via
+      <a href="#" class="underline">email</a>, phone, or our
+      <a href="#" class="underline">support system</a> to ensure that your
+      audiences never miss a beat with your content.
+    </p>
+  </div>
+</div>
+
+<section class="text-center px-4 sm:px-6 lg:px-8 mt-20">
+  <h2
+    class="text-3xl sm:text-4xl md:text-6xl lg:text-5xl font-semibold text-gray-900 leading-snug max-w-6xl mx-auto"
+  >
+    OptiSigns: Digital Signage in 3 Easy Steps
+  </h2>
+
+  <div
+    class="flex flex-col md:flex-row justify-between items-stretch text-black p-8 mt-14 gap-6"
+  >
+    <!-- Block 1 -->
+    <div class="flex-1 p-4 flex flex-col text-left h-full">
+      <div
+        class="w-70 flex-shrink-0 rounded-md shadow p-4 text-left bg-gradient-to-br from-[#dff4fd] to-[#edf4fb]"
+      >
+        <img
+          src="../../assets/1-pair.webp"
+          alt="Description 1"
+          class="w-full h-[200px] object-contain rounded-md"
+        />
+      </div>
+      <div class="flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-medium mt-4 flex items-center gap-2">
+            <span
+              class="bg-[#38a169] text-white text-base px-2 py-1 rounded-lg"
+            >
+              1
+            </span>
+            Pair Your Device
+          </h3>
+          <p class="text-gray-600 text-base md:text-lg mb-6 mt-4">
+            Set up your device or player, download and install the OptiSigns
+            Player app on it, and pair it using the code.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 2 -->
+    <div class="flex-1 p-4 flex flex-col text-left h-full">
+      <div
+        class="w-70 flex-shrink-0 rounded-md shadow p-4 text-left bg-gradient-to-br from-[#dff4fd] to-[#edf4fb]"
+      >
+        <img
+          src="../../assets/2-add con.webp"
+          alt="Description 2"
+          class="w-full h-[200px] object-contain rounded-md"
+        />
+      </div>
+      <div class="flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-medium mt-4 flex items-center gap-2">
+            <span
+              class="bg-[#38a169] text-white text-base px-2 py-1 rounded-lg"
+            >
+              2
+            </span>
+            Add Content
+          </h3>
+          <p class="text-gray-600 text-base md:text-lg mb-6 mt-4">
+            Upload your own content, explore apps and integrations, or create
+            designs with our built-in designer tool.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 3 -->
+    <div class="flex-1 p-4 flex flex-col text-left h-full">
+      <div
+        class="w-70 flex-shrink-0 rounded-md shadow p-4 text-left bg-gradient-to-br from-[#dff4fd] to-[#edf4fb]"
+      >
+        <img
+          src="../../assets/3-assign.webp"
+          alt="Description 3"
+          class="w-full h-[200px] object-contain rounded-md"
+        />
+      </div>
+      <div class="flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-medium mt-4 flex items-center gap-2">
+            <span
+              class="bg-[#38a169] text-white text-base px-2 py-1 rounded-lg"
+            >
+              3
+            </span>
+            Assign to Display
+          </h3>
+          <p class="text-gray-600 text-base md:text-lg mb-6 mt-4">
+            Push your content live to your screens instantly. Manage your
+            screens remotely anytime, anywhere.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <button class="btn-hover-effect">
+      Try For Free
+      <span class="ml-2">&rarr;</span>
+    </button>
+  </div>
+</section>
+
+<!-- Getting Started -->
+<section class="text-center px-4 sm:px-6 lg:px-8 mt-20">
+  <h2
+    class="text-3xl sm:text-4xl md:text-6xl lg:text-5xl font-semibold text-gray-900 leading-snug max-w-6xl mx-auto"
+  >
+    Getting Started
+  </h2>
+  <p class="mt-4 text-base sm:text-lg text-gray-600 max-w-5xl mx-auto">
+    You only need ONE of the below devices, Smart TV or Player, to get started
+    with OptiSigns. No device yet? Try our
+    <a href="#" class="underline"> Web Player</a> or
+    <a href="#" class="underline"> Download OptiSigns Player</a> for your
+    desktop. See our full list of
+    <a href="#" class="underline"> supported devices</a>.
+  </p>
+
+  <div
+    class="flex flex-col md:flex-row justify-between items-stretch text-black p-8 mt-14 gap-6"
+  >
+    <!-- Block Template -->
+    <div
+      class="flex-1 p-4 flex flex-col text-left bg-neutral-50 rounded-lg h-full"
+    >
+      <div>
+        <p class="recommended-badge">Recommended</p>
+
+        <img
+          src="../../assets/pd.webp"
+          alt="Description 1"
+          class="w-full h-[150px] object-contain rounded-md"
+        />
+      </div>
+      <div class="flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-1xl font-bold mt-4 flex items-center gap-2">
+            OptiSigns Android Player
+          </h3>
+          <h3 class="text-1xl font-bold mt-4 flex items-center gap-2">
+            $79.99
+          </h3>
+          <ul class="mt-4">
+            <li class="flex items-center mb-4 text-sm">
+              <i class="fas fa-check-circle text-green-500 mr-1"></i>
+              Easy install, just plug & play
+            </li>
+            <li class="flex items-center mb-4 text-sm">
+              <i class="fas fa-check-circle text-green-500 mr-1"></i>
+              Connected to your account
+            </li>
+            <li class="flex items-center mb-4 text-sm">
+              <i class="fas fa-check-circle text-green-500 mr-1"></i>
+              Shipped to your locations
+            </li>
+            <li class="flex items-center mb-4 text-sm">
+              <i class="fas fa-check-circle text-green-500 mr-1"></i>
+              Ethernet & WiFi connection
+            </li>
+            <li class="flex items-center mb-4 text-sm"></li>
+            <li class="flex items-center mb-5 text-sm"></li>
+          </ul>
+        </div>
+        <div class="mt-auto pt-4">
+          <button class="btn-hover-effect w-full py-1">Buy Now</button>
+        </div>
+        <div class="flex items-center mt-4">
+          <img
+            src="../../assets/amazon a.png"
+            alt="Amazon Logo"
+            class="w-6 h-6 mr-2"
+          />
+          <a
+            href="https://www.amazon.com"
+            class="underline text-gray-500 text-sm"
+          >
+            Buy On Amazon.com
+          </a>
+          <span class="text-gray-500 ml-2 text-sm">(CA, UK, DE)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 2 -->
+    <div
+      class="flex-1 p-4 flex flex-col text-left bg-neutral-50 rounded-lg h-full"
+    >
+      <div>
+        <img
+          src="../../assets/66c7994a806d8cd09f6202bd_pro-player-gen3.avif.png"
+          alt="Description 2"
+          class="w-full h-[150px] object-contain rounded-md"
+        />
+      </div>
+      <div class="flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-1xl font-bold mt-4 flex items-center gap-2">
+            OptiSigns Pro Player
+          </h3>
+          <h3 class="text-1xl font-bold mt-4 flex items-center gap-2">
+            $299.99
+          </h3>
+          <ul class="mt-4">
+            <li class="flex items-center mb-4 text-sm">
+              <i class="fas fa-check-circle text-green-500 mr-1"></i>
+              4K playback
+            </li>
+            <li class="flex items-center mb-4 text-sm">
+              <i class="fas fa-check-circle text-green-500 mr-1"></i>
+              3-screen video walls
+            </li>
+            <li class="flex items-center mb-4 text-sm">
+              <i class="fas fa-check-circle text-green-500 mr-1"></i>
+              Ethernet & WiFi connection
+            </li>
+
+            <li class="flex items-center mb-4 text-sm">
+              <i class="fas fa-check-circle text-green-500 mr-1"></i>
+              24/7 operation
+            </li>
+            <li class="flex items-center mb-4 text-sm">
+              <i class="fas fa-check-circle text-green-500 mr-1"></i>
+              Supports auto power-on, RTC Wakeup, RS-232
+            </li>
+          </ul>
+        </div>
+        <div class="mt-auto pt-4">
+          <button class="btn-hover-effect w-full py-1">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 3 -->
+    <div
+      class="flex-1 p-4 flex flex-col text-left bg-neutral-50 rounded-lg h-full"
+    >
+      <div>
+        <img
+          src="../../assets/_promax-small.avif.png"
+          alt="Description 3"
+          class="w-full h-[150px] object-contain rounded-md"
+        />
+      </div>
+      <div class="flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-1xl font-bold mt-4 flex items-center gap-2">
+            OptiSigns ProMax Player
+          </h3>
+          <h3 class="text-1xl font-bold mt-4 flex items-center gap-2">
+            $599.99
+          </h3>
+          <ul class="mt-4">
+            <li class="flex items-center mb-4 text-sm">
+              <i class="fas fa-check-circle text-green-500 mr-1"></i>
+              8K playback
+            </li>
+            <li class="flex items-center mb-4 text-sm">
+              <i class="fas fa-check-circle text-green-500 mr-1"></i>
+              4-screen video walls
+            </li>
+            <li class="flex items-center mb-4 text-sm">
+              <i class="fas fa-check-circle text-green-500 mr-1"></i>
+              Ethernet & WiFi connection
+            </li>
+            <li class="flex items-center mb-4 text-sm">
+              <i class="fas fa-check-circle text-green-500 mr-1"></i>
+              24/7 operation
+            </li>
+            <li class="flex items-center mb-4 text-sm">
+              <i class="fas fa-check-circle text-green-500 mr-1"></i>
+              Supports auto power-on, RTC Wakeup, RS-232
+            </li>
+          </ul>
+        </div>
+        <div class="mt-auto pt-4">
+          <button class="btn-hover-effect w-full py-1">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- or -->
+<div class="flex items-center justify-center my-4 mx-10">
+  <hr class="flex-grow border-t border-gray-300" />
+  <span class="text-gray-500">OR</span>
+  <hr class="flex-grow border-t border-gray-100" />
+</div>
+
+<!-- Bring Your Own Device -->
+<section class="text-center px-4 sm:px-6 lg:px-8 mt-20">
+  <h2
+    class="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold text-gray-900 leading-snug max-w-6xl mx-auto"
+  >
+    Bring Your Own Device
+  </h2>
+  <p class="mt-4 text-base sm:text-lg text-gray-600 max-w-5xl mx-auto">
+    Our cloud-based digital signage software player app is compatible with all
+    major platforms, just download and install.
+  </p>
+  <img
+    src="../../assets/icon all1.png"
+    alt="Description of image"
+    class="w-full max-w-3xl mx-auto mt-6"
+  />
+  <div class="flex justify-center pt-4">
+    <button class="btn-hover-effect">Go To Download</button>
+  </div>
+
+  <div
+    class="flex flex-col md:flex-row justify-center items-center text-black p-8 gap-4"
+  >
+    <!-- Block Template -->
+    <div
+      class="flex-1 max-w-xs p-4 flex flex-col items-center text-center bg-neutral-50 rounded-lg h-full"
+    >
+      <h3 class="text-4xl font-bold mt-4">175,605</h3>
+      <p class="text-gray-600 text-base md:text-lg mb-6 mt-2">Online Screens</p>
+    </div>
+
+    <!-- Block 2 -->
+    <div
+      class="flex-1 max-w-xs p-4 flex flex-col items-center text-center bg-neutral-50 rounded-lg h-full"
+    >
+      <h3 class="text-4xl font-bold mt-4">13,251</h3>
+      <p class="text-gray-600 text-base md:text-lg mb-6 mt-2">Organizations</p>
+    </div>
+
+    <!-- Block 3 -->
+    <div
+      class="flex-1 max-w-xs p-4 flex flex-col items-center text-center bg-neutral-50 rounded-lg h-full"
+    >
+      <h3 class="text-4xl font-bold mt-4">121</h3>
+      <p class="text-gray-600 text-base md:text-lg mb-6 mt-2">Countries</p>
+    </div>
+  </div>
+
+  <div
+    class="flex flex-col md:flex-row justify-center items-center text-black p-4 gap-2 mb-2"
+  >
+    <div style="margin-left: 10px; margin-bottom: 4px">
+      <span style="color: #f1c40f; font-size: 2rem">★★★★★</span>
+      <span class="text-gray-600 gap-2">Based on 6300+ reviews</span><br />
+    </div>
+  </div>
+
+  <div class="flex justify-center -mt-2">
+    <img
+      src="../../assets/Screenshot 2025-05-20 150959.png"
+      alt="Description of image"
+      class=""
+    />
+  </div>
+</section>
+
+<div
+  class="flex flex-col md:flex-row justify-center gap-6 px-8 py-20 flex-wrap"
+>
+  <!-- Testimonial 1 -->
+  <div class="bg-white rounded-xl shadow p-6 w-full md:w-[280px]">
+    <div class="text-5xl text-green-600 mb-4">"</div>
+    <p class="text-gray-700 mb-6 text-sm leading-relaxed">
+      Very user friendly, reliable, and cost effective. This system allows us to
+      make instant changes from either our computer or our phone by using the
+      app. We use OptiSigns every day and are constantly finding more features
+      to use that we can benefit from.
+    </p>
+    <div class="items-center gap-4">
+      <img
+        src="https://randomuser.me/api/portraits/women/68.jpg"
+        class="w-12 h-12 rounded-full"
+        alt="Jennifer Tames"
+      />
+      <div>
+        <h4 class="text-sm font-bold text-gray-800">Jennifer Tames</h4>
+        <p class="text-xs text-gray-500">HR Manager, Hotel Del Coronado</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonial 2 -->
+  <div class="bg-white rounded-xl shadow p-6 w-full md:w-[280px]">
+    <div class="text-5xl text-green-600 mb-4">“</div>
+    <p class="text-gray-700 mb-6 text-sm leading-relaxed">
+      OptiSigns helped us transform our public spaces into engaging, visually
+      stimulating, better communicating havens. Within a few hours of learning
+      the system, we had it running and our students were blown away. Very easy
+      to use right out of the box.
+    </p>
+    <div class="items-center gap-4">
+      <img
+        src="https://randomuser.me/api/portraits/men/46.jpg"
+        class="w-12 h-12 rounded-full"
+        alt="Rudi Gesch"
+      />
+      <div>
+        <h4 class="text-sm font-bold text-gray-800">Rudi Gesch</h4>
+        <p class="text-xs text-gray-500">
+          Director, Sheboygan Christian School
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonial 3 -->
+  <div class="bg-white rounded-xl shadow p-6 w-full md:w-[280px]">
+    <div class="text-5xl text-green-600 mb-4">“</div>
+    <p class="text-gray-700 mb-6 text-sm leading-relaxed">
+      OptiSigns is the solution we were looking for - as our company grows, we
+      are opening multiple offices. One of our best and most successful attempts
+      to connect our locations and our employees is by using digital signage
+      through OptiSigns.
+    </p>
+    <div class="items-center gap-4">
+      <img
+        src="https://randomuser.me/api/portraits/women/10.jpg"
+        class="w-12 h-12 rounded-full"
+        alt="Rachel Kuhr"
+      />
+      <div>
+        <h4 class="text-sm font-bold text-gray-800">Rachel Kuhr</h4>
+        <p class="text-xs text-gray-500">Communications Manager, HOALiving</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonial 4 -->
+  <div class="bg-white rounded-xl shadow p-6 w-full md:w-[280px]">
+    <div class="text-5xl text-green-600 mb-4">“</div>
+    <p class="text-gray-700 mb-6 text-sm leading-relaxed">
+      We were looking to make our digital menus more attractive and achieved
+      just that with OptiSigns! Easy to implement and now we have rotating
+      hourly and daily menus that bring in more customers. Great customer
+      support on top of that!
+    </p>
+    <div class="items-center gap-4 mb-4">
+      <img
+        src="https://randomuser.me/api/portraits/men/30.jpg"
+        class="w-12 h-12 rounded-full"
+        alt="Robert Herrera"
+      />
+      <div>
+        <h4 class="text-sm font-bold text-gray-800">Robert Herrera</h4>
+        <p class="text-xs text-gray-500">Owner, Les Cavistes Restaurant</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <button class="btn-hover-effect">
+      Try For Free
+      <span class="ml-2">&rarr;</span>
+    </button>
+  </div>
+</div>
+
+<section
+  class="h-[500px] w-full flex items-center justify-center px-16 py-10 gap-x-10 bg-gradient-to-r from-teal-700 to-cyan-900 text-white relative"
+>
+  <!-- Left Content -->
+  <div class="max-w-xl space-y-2">
+    <h2 class="text-xl font-semibold uppercase tracking-wide">Case Studies</h2>
+    <p class="text-2xl font-light leading-snug">
+      “After starting with OptiSigns, our sales increased and the guest
+      experience grew immensely.”
+    </p>
+    <div class="flex items-center space-x-4 pt-2">
+      <img
+        src="../../assets/659c214474c64351d227f57e_case_studies-logo-1.webp"
+        alt="Super Chix Logo"
+        class="h-10 px-2 py-1 rounded"
+      />
+      <div class="border-l border-gray-300 h-12"></div>
+      <div>
+        <p class="font-semibold">Megan Dial</p>
+        <p class="text-sm">Manager, Super Chix Restaurant</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Video/Image -->
+  <div class="relative">
+    <img
+      src="../../assets/6669deecf4735134dc3e1509_Super Chix Avatar.webp"
+      alt="Testimonial"
+      class="rounded-full w-64 h-64 object-cover"
+    />
+    <button
+      class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-white text-teal-700 flex items-center justify-center shadow-lg"
+    >
+      ▶
+    </button>
+  </div>
+
+  <!-- Arrows -->
+  <div class="absolute bottom-6 left-20 flex space-x-6 text-2xl">
+    <button id="prev-arrow" class="hover:text-teal-300 transition">
+      &#8592;
+    </button>
+    <button id="next-arrow" class="hover:text-teal-300 transition">
+      &#8594;
+    </button>
+  </div>
+</section>
+
+<section class="text-center px-4 sm:px-6 lg:px-8 mt-20">
+  <h2
+    class="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold text-gray-900 leading-snug max-w-6xl mx-auto"
+  >
+    Digital Signage for Every Business
+  </h2>
+  <p class="mt-4 text-base sm:text-lg text-gray-600 max-w-5xl mx-auto">
+    Explore tailored digital signage solutions that fit your industry
+  </p>
+</section>
+
+<section class="w-full px-6 md:px-12 mt-14">
+  <div class="scroll-wrapper overflow-x-auto pb-4 scroll-smooth">
+    <div class="inline-flex space-x-6 pr-6">
+      <!-- All your cards go here (Card 1 to Card 8) -->
+      <div
+        class="w-72 flex-shrink-0 bg-white rounded-2xl shadow-lg p-5 text-left"
+      >
+        <div
+          class="w-70 flex-shrink-0 rounded-md shadow p-4 text-left bg-gradient-to-br from-[#dff4fd] to-[#edf4fb]"
+        >
+          <img
+            src="../../assets/mmmm.avif"
+            alt="Manufacturing"
+            class="mb-4 rounded-md h-40 w-full object-contain"
+          />
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mt-4">
+          Manufacturing And Production
+        </h3>
+        <p class="text-sm text-gray-600 mt-2">
+          Use digital signage solutions to streamline operations, boost
+          productivity, and stay ahead of the competition.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <!-- Repeat this block for each card -->
+      <div
+        class="w-72 flex-shrink-0 bg-white rounded-2xl shadow-lg p-5 text-left"
+      >
+        <div
+          class="w-70 flex-shrink-0 rounded-md shadow p-4 text-left bg-gradient-to-br from-[#dff4fd] to-[#edf4fb]"
+        >
+          <img
+            src="../../assets/Retail.avif"
+            alt="Manufacturing"
+            class="mb-4 rounded-md h-40 w-full object-contain"
+          />
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mt-4">Retail</h3>
+        <p class="text-sm text-gray-600 mt-2">
+          You can create immersive shopping experiences that lead to increased
+          sales by attracting foot traffic from the outside, guiding customers
+          around the...
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <!-- Repeat this block for each card -->
+      <div
+        class="w-72 flex-shrink-0 bg-white rounded-2xl shadow-lg p-5 text-left"
+      >
+        <div
+          class="w-70 flex-shrink-0 rounded-md shadow p-4 text-left bg-gradient-to-br from-[#dff4fd] to-[#edf4fb]"
+        >
+          <img
+            src="../../assets/office communication.avif"
+            alt="Manufacturing"
+            class="mb-4 rounded-md h-40 w-full object-contain"
+          />
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mt-4">
+          Corporate Office & Communications
+        </h3>
+        <p class="text-sm text-gray-600 mt-2">
+          You can quickly get your signs up and running in just minutes,
+          enabling you to display a wide range of content, including...
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <!-- Repeat this block for each card -->
+      <div
+        class="w-72 flex-shrink-0 bg-white rounded-2xl shadow-lg p-5 text-left"
+      >
+        <div
+          class="w-70 flex-shrink-0 rounded-md shadow p-4 text-left bg-gradient-to-br from-[#dff4fd] to-[#edf4fb]"
+        >
+          <img
+            src="../../assets/healthcare.avif"
+            alt="Manufacturing"
+            class="mb-4 rounded-md h-40 w-full object-contain"
+          />
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mt-4">Healthcare</h3>
+        <p class="text-sm text-gray-600 mt-2">
+          Optimize patient flow, reduce wait times, simplify navigation and
+          improve overall healthcare experiences.
+        </p>
+      </div>
+
+      <!-- Card 5 -->
+      <!-- Repeat this block for each card -->
+      <div
+        class="w-72 flex-shrink-0 bg-white rounded-2xl shadow-lg p-5 text-left"
+      >
+        <div
+          class="w-70 flex-shrink-0 rounded-md shadow p-4 text-left bg-gradient-to-br from-[#dff4fd] to-[#edf4fb]"
+        >
+          <img
+            src="../../assets/Restaurant.avif"
+            alt="Manufacturing"
+            class="mb-4 rounded-md h-40 w-full object-contain"
+          />
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mt-4">Restaurant</h3>
+        <p class="text-sm text-gray-600 mt-2">
+          Boost your sales and engage customers with our user-friendly digital
+          signage solution, complete with free templates, easy setup,
+          scheduling, interactive options, 150+ ......
+        </p>
+      </div>
+      <!-- Card 6 -->
+      <!-- Repeat this block for each card -->
+      <div
+        class="w-72 flex-shrink-0 bg-white rounded-2xl shadow-lg p-5 text-left"
+      >
+        <div
+          class="w-70 flex-shrink-0 rounded-md shadow p-4 text-left bg-gradient-to-br from-[#dff4fd] to-[#edf4fb]"
+        >
+          <img
+            src="../../assets/education.avif"
+            alt="Manufacturing"
+            class="mb-4 rounded-md h-40 w-full object-contain"
+          />
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mt-4">education</h3>
+        <p class="text-sm text-gray-600 mt-2">
+          Use digital signage to help communicate effectively with students,
+          faculty, and visitors, showcase events and student work.
+        </p>
+      </div>
+
+      <!-- Card 7 -->
+      <!-- Repeat this block for each card -->
+      <div
+        class="w-72 flex-shrink-0 bg-white rounded-2xl shadow-lg p-5 text-left"
+      >
+        <div
+          class="w-70 flex-shrink-0 rounded-md shadow p-4 text-left bg-gradient-to-br from-[#dff4fd] to-[#edf4fb]"
+        >
+          <img
+            src="../../assets/digital signage.avif"
+            alt="Manufacturing"
+            class="mb-4 rounded-md h-40 w-full object-contain"
+          />
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mt-4">
+          Media And Marketing Agency
+        </h3>
+        <p class="text-sm text-gray-600 mt-2">
+          Gain control over branding with your out-of-home advertising, and add
+          more value to your customers with our digital signage software
+          solution.
+        </p>
+      </div>
+      <!-- Card 8 -->
+      <!-- Repeat this block for each card -->
+      <div
+        class="w-72 flex-shrink-0 bg-white rounded-2xl shadow-lg p-5 text-left"
+      >
+        <div
+          class="w-70 flex-shrink-0 rounded-md shadow p-4 text-left bg-gradient-to-br from-[#dff4fd] to-[#edf4fb]"
+        >
+          <img
+            src="../../assets/Smart  trans.avif"
+            alt="Manufacturing"
+            class="mb-4 rounded-md h-40 w-full object-contain"
+          />
+        </div>
+        <h3 class="font-bold text-lg text-gray-800 mt-4">
+          Transportatio & Logistics
+        </h3>
+        <p class="text-sm text-gray-600 mt-2">
+          Improve communication and productivity by displaying real-time
+          information about schedules, inventory, safety protocols, and other
+          important updates to employees and customers, ultimately leading to a
+          better experience.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="text-center mt-4">
+  <span class="text-gray-500">Scroll for more</span>
+</div>
+
+<!-- Frequently Asked Questions -->
+<section class="text-center px-4 sm:px-6 lg:px-8 mt-20">
+  <h2
+    class="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold text-gray-900 leading-snug max-w-6xl mx-auto"
+  >
+    Frequently Asked Questions
+  </h2>
+  <div class="faq-section">
+    <div class="faq-item" *ngFor="let faq of faqs; let i = index">
+      <button
+        class="faq-question"
+        [class.active]="activeIndex === i"
+        (click)="toggleFAQ(i)"
+      >
+        <span>{{ faq.question }}</span>
+        <span class="faq-icon">
+          {{ activeIndex === i ? "\u25B2" : "\u25BC" }}
+        </span>
+      </button>
+      <div class="faq-answer" *ngIf="activeIndex === i">
+        <ng-container *ngFor="let para of faq.answer.split('\n\n')">
+          <p>{{ para }}</p>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#38a169] text-white py-8 mt-4">
+  <div
+    class="container mx-auto flex flex-col md:flex-row items-center justify-center px-12 md:px-16"
+  >
+    <!-- Left Content -->
+    <div class="md:w-1/2 text-center md:text-left mb-6 md:mb-0 md:ml-8">
+      <h2 class="text-2xl md:text-4xl font-bold leading-tight mb-6">
+        Level Up Your Business.<br />
+        <span class="text-white">Vibrant Screens,</span><br />
+        <span class="text-white">Engaged Audiences</span>
+      </h2>
+      <p class="text-1xl mb-6">
+        Start your <strong>FREE</strong> trial with OptiSigns today and create
+        dynamic, eye-catching digital signage that captures attention and
+        delivers results.
+      </p>
+      <a
+        href="#"
+        class="inline-block bg-white text-green-800 font-semibold px-6 py-3 rounded hover:bg-gray-100 transition"
+      >
+        Try For Free
+      </a>
+    </div>
+
+    <!-- Right Image -->
+    <div class="md:w-1/2 md:ml-8">
+      <img
+        src="../../assets/6550fa7d859076c7eb13309c_footer-img.webp"
+        alt="Digital Signage Illustration"
+        class="w-full max-w-md mx-auto md:mx-0"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="bg-gray-900 text-white py-16">
+  <div class="container mx-auto px-6 md:px-12">
+    <!-- Top section -->
+    <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+      <div class="text-center md:text-left mb-8 md:mb-0">
+        <h2 class="text-2xl font-semibold mb-2">
+          Utilize OptiSigns To Unlock Your Business' Potential
+        </h2>
+        <div
+          class="flex justify-center md:justify-start items-center space-x-2 text-yellow-400"
+        >
+          <span class="text-xl">★★★★★</span>
+          <span class="text-white">Based on 6300+ reviews</span>
+        </div>
+      </div>
+      <!-- Email form -->
+      <div class="w-full md:w-1/3">
+        <h3 class="link text-lg font-semibold mb-2">Stay In The Loop</h3>
+        <form class="flex flex-col space-y-3">
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="px-4 py-2 rounded text-gray-900 focus:outline-none"
+          />
+          <button
+            class="bg-[#38a169] hover:bg-green-600 text-white py-2 rounded font-semibold transition"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <hr class="border-gray-700 mb-12" />
+
+    <!-- Link Columns -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm text-center md:text-left"
+    >
+      <!-- Products -->
+      <div>
+        <h4 class="link font-medium mb-2">Products</h4>
+        <ul class="space-y-2 font-medium">
+          <li>Digital Signage</li>
+          <li>Engage</li>
+          <li>Workplace</li>
+          <li>Feeds</li>
+          <li>Hardware</li>
+          <li>Platform as a Service</li>
+          <li>Mobile App</li>
+        </ul>
+
+        <h4 class="link font-medium mb-2 mt-14">Get Started</h4>
+        <ul class="space-y-2 font-medium">
+          <li>Try For Free</li>
+          <li>Downloads</li>
+          <li>Pricing</li>
+        </ul>
+      </div>
+
+      <!-- Industries -->
+      <div>
+        <h4 class="link font-medium mb-2">Industries</h4>
+        <ul class="space-y-2 font-medium">
+          <li>Assisted Living</li>
+          <li>Convenience Stores</li>
+          <li>Corporate Office & Comms</li>
+          <li>Education</li>
+          <li>Financial Services</li>
+          <li>Government</li>
+          <li>Grocery Stores</li>
+          <li>Gyms & Fitness Centers</li>
+          <li>Healthcare</li>
+          <li>Manufacturing and Production</li>
+          <li>Media and Marketing Agency</li>
+          <li>Religious Organizations</li>
+          <li>Restaurants</li>
+          <li>Retail</li>
+          <li>Transportation & Logistics ye points</li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div>
+        <h4 class="link font-medium mb-2">Resources</h4>
+        <ul class="space-y-2 font-medium">
+          <li>What is Digital Signage?</li>
+          <li>How It Works</li>
+          <li>Blog</li>
+          <li>Application Downloads</li>
+          <li>Videos</li>
+          <li>Integrations</li>
+          <li>Support Center</li>
+          <li>OptiSigns API</li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h4 class="link font-medium mb-2">Company</h4>
+        <ul class="space-y-2 font-medium">
+          <li>Partnership</li>
+        </ul>
+
+        <h4 class="link font-medium mb-2 mt-14">Contact Us</h4>
+        <p>7676 Hillmont Street, #201<br />Houston, TX 77040</p>
+        <div
+          class="flex justify-center md:justify-start space-x-4 mt-4 text-xl"
+        >
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
